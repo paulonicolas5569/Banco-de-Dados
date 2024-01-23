@@ -1,0 +1,31 @@
+Photoshop - UC 14
+Lógica de programação - UC 9
+Front-end - UC 15
+Banco de dados - UC 10
+Sistema Desktop - UC 12
+Back-end - UC 13
+Testes de software - UC 11
+PI - UC 16
+________________________________________
+Banco de dados:
+Slide de apoio:
+https://professorjosedeassis.github.io/mysql
+
+- local (desenvolvimento) - Instalado no Windows (Ex: xampp)
+- rede local - Servidor (físico ou virtual)
+- nuvem (AWS, Azure e Google Cloud)
+
+Relacional x Não relacional
+https://aws.amazon.com/pt/compare/the-difference-between-mongodb-vs-mysql/
+
+Preparação do ambiente de desenvolvimento:
+- Servidor local (virtual)
+Usar máquina virtual Vaamonde (usuário: senac  senha: 123@senac)
+Trocar o ip da máquina
+Verificar o serviço: sudo systemctl status mongod.service
+
+- CLOUD
+
+
+
+
