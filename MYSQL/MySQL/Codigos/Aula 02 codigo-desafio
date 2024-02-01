@@ -1,0 +1,45 @@
+ create database vendas;
+ create table papelaria (codigo int not null auto_increment, nome varchar(30) not null, preco decimal(5,2), primary key (codigo))default charset = utf8;
+ desc papelaria;
+ 
+ insert into papelaria (codigo, nome, preco) values (default, 'Livro', "80.0"),
+ (default, 'Borracha', "2.0"),
+ (default, 'Caneta', "3.0"),
+ (default, 'Papel', "10.0"),
+ (default, 'Tecido', "15.0"),
+ (default, 'Apontador', "2.0"),
+ (default, 'Lapis', "4.0"),
+ (default, 'Caderno', "20.0"),
+ (default, 'Fichário', "40.0"),
+ (default, 'Envelope', "10.0");
+ 
+ select * from papelaria;
+ 
+ create table duplicata (numero int not null auto_increment, nome varchar(30), valor decimal(20,2), vencimento date, banco varchar(30), primary key(numero))default charset = utf8;
+ desc duplicata;
+ 
+ drop table duplicata;
+ 
+ insert into duplicata (numero, nome, valor, vencimento, banco)
+ values (default, 'ABC PAPELARIA', '5000.00', '2017-01-20', 'ITAU'),
+ (default, 'LIVRARIA FERNANDES', '2500.00', '2017-01-22', 'ITAU'),
+ (default, 'LIVRARIA FERNANDES', '1500.00', '2016-10-15', 'BRADESCO'),
+ (default, 'ABC PAPELARIA', '8000.00', '2016-10-15', 'SANTANDER'),
+ (default, 'LER E SABER ', '10500.00', '2018-04-26', 'BANCO DO BRASIL'),
+ (default, 'LIVROS E CIA ', '2000.00', '2018-04-26', 'BANCO DO BRASIL'),
+ (default, 'LER E SABER', '11000.00', '2018-09-26', 'ITAU'),
+ (default, 'PAPELARIA SILVA', '1500.00', '2018-01-26', 'BRADESCO'),
+ (default, 'LIVROS MM', '500.00', '2018-12-18', 'SANTANDER'),
+ (default, 'LIVROS MM', '3400.00', '2018-04-26', 'SANTANDER'),
+ (default, 'PAPELARIA SILVA', '3500.00', '2018-04-26', 'BANCO DO BRASIL'),
+ (default, 'LIVROS E CIA', '1500.00', '2018-06-15', 'ITAU'),
+ (default, 'LIVROS MM ', '5400.00', '2018-06-15', 'BRADESCO'),
+ (default, 'PAPELARIA SILVA', '2350.00', '2017-12-27', 'ITAU'),
+ (default, 'LIVROS E CIA', '1550.00', '2017-12-27', 'BANCO DO BRASIL'),
+ (default, 'ABC PAPELARIA', '4000.00', '2016-12-11', 'ITAU'),
+ (default, 'LIVRARIA FERNANDES ', '2500.00', '2016-11-15', 'SANTANDER'),
+ (default, 'ABC PAPELARIA', '3000.00', '2016-09-11', 'ITAU'),
+ (default, 'PAPEL E AFINS', '2500.00', '2016-03-12', 'SANTANDER'),
+ (default, 'LER E SABER ', '2500.00', '2017-03-05', 'ITAU');
+ 
+ select * from duplicata

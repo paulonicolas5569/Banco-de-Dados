@@ -1,0 +1,17 @@
+AULA 2 - MySQL
+
+insert into NomeTabela(campos) values (valores); = colocar dentro dos campos e atribuir os valores correspondentes aos da tabela
+
+select = filtra a tabela especificada
+select * from tabela = mostra todos os dados que foram inseridos na tabela
+
+drop table tabela; = apaga apenas a tabela
+
+auto_increment = incere automaticamente
+
+primary key (campo) = transforma aquele campo em chave primaria, na qual não pode repetir
+
+O MySQL possui diversas linguas:
+
+DDL = Date Definition Language - comandos de definição (CREATE DATABASES ou CREATE TABLE)
+DML = Date manipulation Language - comando de manipulação, insirir, apagar, etc (INSERT TO)
