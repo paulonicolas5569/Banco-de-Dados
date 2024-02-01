@@ -1,0 +1,4 @@
+AULA 2 de ELECTRON
+
+Estrutura de pastas de acordo com o modelo MVC (2 camadas - views e models)
+Pasta public é usada para armazenar os recursos da camada views (documentos html)

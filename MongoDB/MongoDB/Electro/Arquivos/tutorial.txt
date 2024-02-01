@@ -1,0 +1,18 @@
+AULA 1 de ELECTRON
+
+1) npm init
+2) entry point = main.js
+3)license = MIT
+4)npm install electron --save-dev = instalar o electron
+5)criar um .gitignore
+6)colocar dentro do .gitignore node_modules
+7)criar um main.js
+8)configurar o script do package.json para iniciar o eletctron
+9)configurar o main.js
+10) criar pastas src, src/public, src/public/css, src/public/img, src/public/js, src/views
+
+
+"start": "electron ." = script para iniciar o electron
+executar o electron = npm run start
+
+
