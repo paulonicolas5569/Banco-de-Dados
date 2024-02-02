@@ -1,0 +1,33 @@
+AULA 3 - MySQL
+
+alter table - altera a tabela especificada (SEMPRE VEM PRIMEIRO)
+add column nomeColuna tipoDeInput; - adiciona uma coluna com o nome e tipo indicados em ultimo na tabela
+
+drop column nomeColuna - apaga a coluna
+
+  alter table pessoas
+ add column profissao varchar(10) after nome; - adiciona a coluna profissao depois da coluna nome
+ 
+  alter table pessoas
+ add column codigo int first; - adiciona a coluna como a primeira da tabela
+
+  alter table pessoas
+ modify column profissao varchar(30) not null; - modifica uma coluna
+ 
+  alter table pessoas
+ modify column profissao varchar(30) not null default ' '; - modifica a tabela para ter 30 caracteres, not null e o default estar vazio
+ 
+  alter table pessoas
+ change column profissao prof varchar(30); - renomeia a coluna, colocand seu nome atual e depois o nome que sera utilizado e seu tipo
+ 
+  alter table pessoas
+ rename alunos; - renomeia o nome da tabela 
+ 
+ create table if not exists cursos( - cria uma tabela caso ela não exista
+ nome varchar(30) not null unique, - o unique é que so pode existir um nome, e nenhum igual
+ descricao text, - para textos longos
+ carga int unsigned, - não entra numero negativo
+ totalAulas int
+ ) default charset = utf8;
+ 
+ 
