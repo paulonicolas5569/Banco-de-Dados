@@ -1,0 +1,72 @@
+ use cadastro;
+ 
+ alter table pessoas
+ add column profissao varchar(10);
+ 
+ desc pessoas;
+ select * from pessoas;
+ 
+ alter table pessoas
+ drop column profissoa;
+ 
+ alter table pessoas
+ add column profissao varchar(10) after nome;
+ 
+ alter table pessoas
+ add column codigo int first;
+ 
+ alter table pessoas
+ modify column profissao varchar(30) not null;
+ 
+ alter table pessoas
+ modify column profissao varchar(30) not null default ' ';
+ 
+ alter table pessoas
+ change column profissao prof varchar(30);
+ 
+ alter table pessoas
+ rename alunos;
+ 
+ alter table alunos
+ drop column codigo;
+ 
+ desc alunos;
+ select * from alunos;
+ 
+ create table if not exists cursos(
+ nome varchar(30) not null unique,
+ descricao text,
+ carga int unsigned,
+ totalAulas int
+ ) default charset = utf8;
+ 
+ desc cursos;
+ 
+ alter table cursos
+ add column idcurso int first;
+ 
+ alter table cursos
+ add primary key (idcurso);
+ 
+  alter table cursos
+ modify column idcurso int auto_increment;
+ 
+ drop table cursos;
+ 
+ insert into cursos 
+ value
+ (default,'Lógica de Programação', 'Você aprenderá sobre o desenvolvimento de soluções com aplicação da lógica de programação, que permite a criação de softwares amigáveis, seguros e funcionais.', 40, 10);
+ 
+ select * from cursos;
+ 
+ alter table cursos 
+ modify column idcurso int not null auto_increment;
+ 
+ insert into cursos
+ values
+ (default, 'Desenvolvedor Android', 'Você aperfeiçoará técnicas no desenvolvimento de aplicativos para tablets, celulares e outros dispositivos da plataforma Android, implementando rotinas de programação, criação de interface e uso de dados.', 40, 10)
+
+
+ 
+ 
+ 
