@@ -1,0 +1,27 @@
+ AULA 4 - MySQL
+
+ Manipulando linhas
+
+ update cursos - entra no cursos e fara a atualização dele
+ set nome = 'Formação Excel: do básico ao avançado', totalAulas = '18' - altera duas partes da tabela
+ where idcurso = '5'; - especifica onde ele deve ser alterado pelo id
+ 
+ limit 1 = adiciona o limite de dados que serão alterados
+ 
+  delete from cursos - deleta a linha de cadastro
+ where idcurso = 7; - especifica qual linha sera apagada pelo id
+ 
+  truncate cursos; - apaga todos os registros da tabela, porem a mesma permanece
+
+DDL: Date Definition Language
+	CREATE DATABASES
+	CREATE TABLE
+	ALTER TABLE
+	DROP TABLE
+	DROP DATABASES
+
+DML: Data Manipulation Language
+	INSERT INTO
+	UPDATE
+	DELETE
+	TRUNCATE
