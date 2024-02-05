@@ -1,0 +1,50 @@
+ insert into cursos
+ values
+ (default, 'Algoriitimos', 'Lógica de programação. Você aprenderá sobre o desenvolvimento de soluções com aplicação da lógica de programação, que permite a criação de softwares amigáveis, seguros e funcionais.', '40', '10',default),
+  (default, 'Exel Essencl', 'Você aprenderá a criar planilhas e tabelas, fazer gráficos simples, além de salvar arquivos em nuvem e realizar cálculos usando fórmulas e funções de Excel básico.', '2', '10',default),
+   (default, 'Excel Avançado I', 'Você aprofundará conhecimentos em funções do Excel avançado para otimizar cálculos e facilitar a construção de planilhas, banco de dados, relatórios e gráficos.', '24', '6',default),
+    (default, 'Excel Avado II', 'Você saberá mais sobre ferramentas avançadas e em recursos de banco de dados no Excel para automatizar tarefas e aprimorar consultas, relatórios, gráficos e cálculos.', '40', '10',default),
+      (default, 'Form Excel: do básico ao avançado', 'Você aprenderá a inserir informações em planilhas, usando recursos, funções e ferramentas avançadas do Excel 365 para criar gráficos, fazer cálculos e manipular dados.', '72', '2','2025'),
+      (default, 'Desenvvidor Web Front-end 1', 'Você aprenderá a planejar e desenvolver sites responsivos com imagens.', '60', '15','2025'),
+       (default, 'Desenvolvedor GeWeb Front-end 2: JavaScript', 'Você aprenderá como utilizar a codificação JavaScript para criar e usar recursos básicos de interatividade em um site.', '40', '12','2023');
+      
+      
+ select * from cursos;
+ 
+ update cursos
+ set nome = 'Algoritmos'
+ where idcurso = '5';
+ 
+ update cursos
+ set nome = 'Excel Essencial', carga = '40'
+ where idcurso = '6';
+ 
+ update cursos
+ set nome = 'Excel Avançado II'
+ where idcurso = '8';
+ 
+ update cursos
+ set nome = 'Formação Excel: do básico ao avançado', totalAulas = '18'
+ where idcurso = 9;
+ 
+ update cursos
+ set nome = 'Desenvolvedor Web Front-End 1'
+ where idcurso = 10;
+ 
+ update cursos
+ set nome = 'Desenvolvedor Web Front-End'
+ where idcurso = 11;
+ 
+ update cursos
+ set ano = '2024', carga = 40
+ where ano = '2025'
+ limit 1;
+ 
+ delete from cursos
+ where idcurso = 10;
+ 
+  delete from cursos
+ where ano = 2050
+ limit 2;
+ 
+ truncate cursos;
