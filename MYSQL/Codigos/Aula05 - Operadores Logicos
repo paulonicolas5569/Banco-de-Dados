@@ -119,7 +119,27 @@ select avg(carga) from cursos;
 select avg(totalAulas) from cursos;
 
 
+select distinct nacionalidade from alunos 
+order by nacionalidade;
 
+select nacionalidade from alunos 
+group by nacionalidade;
 
+select carga from cursos 
+group by carga;
 
+select nacionalidade, count(nacionalidade) from alunos 
+group by nacionalidade;
 
+select carga from cursos
+where carga = '24'
+group by carga;
+
+select carga, totalaulas, count(*) from cursos
+where totalaulas = '6'
+group by carga;
+
+select ano,count(*) from cursos 
+group by ano
+having count(ano)>=4
+order by ano; 
