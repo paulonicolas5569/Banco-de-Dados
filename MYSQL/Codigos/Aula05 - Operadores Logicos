@@ -143,3 +143,13 @@ select ano,count(*) from cursos
 group by ano
 having count(ano)>=4
 order by ano; 
+
+select ano, count(*) from cursos 
+where carga >=40 group by ano 
+having ano > 2024 
+order by ano;
+
+select carga, count(*) from cursos 
+where ano > 2024 
+group by carga
+having carga > (select avg(carga) from cursos );
