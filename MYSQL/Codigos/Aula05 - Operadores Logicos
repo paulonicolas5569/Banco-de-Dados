@@ -1,0 +1,125 @@
+select * from cursos
+where ano = '2021'
+order by nome;
+
+select carga, nome from cursos
+where ano > '2024'
+order by nome;
+
+select * from cursos
+where totalAulas between '20' and '30'/* o 'between' seleciona um intervalo entre duas coisas */
+order by nome;
+
+select nome , ano from cursos
+where ano between 2021 and 2023; 
+
+select nome, ano from cursos
+where ano between 2021 and 2023
+order by ano desc, nome;
+
+select * from cursos
+where ano in (2021,2022) /* o 'in' seleciona valores especificos */
+order by nome;
+
+select nome, descricao from cursos 
+where ano in (2021); 
+
+select * from cursos
+where carga > 35 and totalAulas < 20
+order by nome;
+
+select * from cursos
+where carga > 35 or totalAulas < 20
+order by carga;
+
+
+select * from cursos
+where nome = 'algoritimos';
+
+select * from cursos
+where nome like 'E%'; /*o like segnifica semelhante ou parecido */
+
+select * from cursos
+where nome like 'p%'; /*com o '%' na frente da letra ele localiza os compos com esta letra no começo  */
+
+select * from cursos
+where nome like '%e'; /*com o '%' atras da  letra ele localiza os compos com esta letra no final  */
+
+select * from cursos
+where nome like '%A%';/*com o '%x%' Não importa a posição ele localiza o campo desejado se apenas tiver com a letra desejada  */
+
+select * from cursos
+where nome not like '%A%'; /*com o 'not' ele nocaliza o campo que não tem a letra que esta dentro do '%x%' */
+
+select * from cursos
+where nome like 'E%L';
+
+select * from cursos
+where nome like 'E%L%';
+
+select * from cursos
+where nome like 'C%_';
+
+select * from cursos
+where nome like 'ph%p';
+
+select * from cursos
+where nome like 'ph%p_';
+
+select * from cursos
+where nome like 'p_p%';
+
+select * from cursos
+where nome like 'p__%';
+
+select * from alunos
+where nome like '%Silva%';
+
+select * from alunos
+where nome like '%gomes%';
+
+select distinct carga from cursos
+order by carga;
+
+select distinct nacionalidade from alunos
+order by nacionalidade;
+
+select count(*) from cursos;
+select count(*) from alunos;
+
+select count(*) from cursos
+where carga > 40;
+
+select count(*) from alunos
+where nacionalidade = 'brasil';
+
+select * from cursos 
+order by carga;
+
+select max(carga) from cursos;
+
+select max(carga) from cursos
+where ano = 2023;
+
+select max(totalAulas) from cursos
+where ano = 2023;
+
+select min(totalAulas) from cursos;
+
+select min(totalAulas) from cursos
+where ano = 2023;
+
+select sum(carga) from cursos;
+
+select sum(totalAulas) from cursos
+where ano = 2024;
+
+select avg(carga) from cursos;
+
+select avg(totalAulas) from cursos;
+
+
+
+
+
+
