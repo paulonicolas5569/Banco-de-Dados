@@ -1,0 +1,23 @@
+1) npm init (definir main.js como principal)
+2) Instalar o electron:
+   npm install electron --save-dev
+3) Na raiz criar o arquivo main.js
+4) Configurar o script do package.json para iniciar o electron
+    "scripts": {
+        "start": "electron ."
+    },
+Executar o electron pelo console: npm run start
+5) Configurar o main.js
+
+Estrutura de pastas de acordo com a modelo MVC (2 camadas - views e models)
+Pasta public é usada para armazenar os recursos da camada views (documentos html)
+
+6) Setup do ambiente (janelas) // comentanto no código
+
+7)processos
+- front-end e back-end
+- preload(Pré carregamento de um script.js para injetar no index.html)
+***criar o arquivo proload.js na raiz e modificar o main
+-assincronismo
+async
+await
