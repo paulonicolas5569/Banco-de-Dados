@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <img src="../public/img/dboff.png" alt="status do banco" id="status">
+    <h1>Lista de Tarefas</h1>
+
+    <form id="frmTarefas">
+        <input type="text" id="txtTarefa" placeholder="Tarefa">
+        <input type="text" id="txtDescricao" placeholder="Descricao">
+        <input type="submit" value="Salvar">
+    </form>
+    <!-- Lista de Tarefas Pendentes  Passo 4.1-->
+    <ul id="listaTarefas"></ul>
+
+
+    <script src="../public/js/renderer.js"></script>
+</body>
+
+</html>
