@@ -1,0 +1,22 @@
+Ligação do banco de dados mongodb com electron
+
+- Driver
+- URL (caminho para chegar até o banco de dados)
+- Autenticação
+
+-------------------------------------------------------------------
+
+Nome do banco de dados
+Coleção
+CRUD (Create Read Update Delete) //Importante
+
+1) instalar o moongose (módulo para siplificar as operações do node com o banco de dados mongodb)
+
+npm i mongoose
+
+2) Criar na raiz o arquivo db.js e escreve o código para conectar e desconectar o banco de dados
+
+3)Criar na camada model a classe modelo para representar o esquema (coleção) do banco de dados.
+ATENÇÃO! mongoose criar automaticamente o banco e a coleção baseado no esquema da classe modelo.
+
+4) Importar o Schema

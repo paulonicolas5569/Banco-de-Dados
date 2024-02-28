@@ -1,0 +1,17 @@
+{
+  "name": "electron_mongodb",
+  "version": "1.0.0",
+  "description": "Projeto lista de tarefas",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Gustavo Pnheiro",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.1"
+  },
+  "dependencies": {
+    "mongoose": "^8.1.1"
+  }
+}
