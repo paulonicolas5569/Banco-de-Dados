@@ -1,0 +1,33 @@
+Atividade (individual ou dupla):
+Desenvolvimento de uma agenda de contatos usando electron e mongodb.
+
+- Campos do formulário:
+nome: (obrigatório)
+fone: (obrigatório)
+email:  
+
+1) Cadastrar 5 contatos no banco de dados via formulário do electron.
+
+2) Exibir os contatos 
+
+3) Editar os contatos
+
+4) Excluir os contatos (confirmação de exclusão)
+
+5) UX/UI 
+- Criar uma folha de estilo (style.css) e formatar a agenda
+- Limitar número máximo de caracteres
+- Criar um menu personalizado e tela sobre
+- Limpar comentários feitos para fins didáticos
+Desafios:
+  5.1) Fixar o cabeçalho da agenda (form cadastro/edição)
+  5.2) Criar um rodapé com data atual e ícone de status do banco
+  5.3) Listar os contatos em ordem alfabética (pesquisar mongoose)
+
+6) Documentar e publicar o projeto da agenda no github
+
+
+
+
+
+
